@@ -1,0 +1,570 @@
+
+.accordion__button{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #fafafa;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    transition:  0.2s;
+    margin-top: 15px;
+
+}
+
+.accordion__button::after{
+    content: '\25be';
+    float: right;
+    transform: scale(1.5);
+}
+.accordion__button--active {background: #fafafa;}
+.accordion__button--active::after {content: '\25b4';}
+.accordion__content{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+
+    padding: 0 15px;
+    font-family: sans-serif;
+    background: white;
+}
+
+
+
+
+
+
+
+
+.accordion__button-1{
+  font-size: 15px;
+  display: block;
+  width: 97%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #fafafa;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  transition:  0.2s;
+  margin-top: 5px;
+  
+
+}
+
+.accordion__button-1::after{
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+.accordion__button-1--active {background: #fafafa;}
+.accordion__button-1--active::after {content: '\25b4';}
+.accordion__content-1{
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+
+  padding: 0 15px;
+  font-family: sans-serif;
+  background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Para la seleccion de las imagenes de los productos DimartBox */
+.container{
+    max-width: 333px;
+    margin:10 auto;
+    padding:3rem 2rem;
+ }
+
+ .container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap:2rem;
+ }
+
+ .container .products-container .product{
+    text-align: center;
+    padding:2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+ }
+ .container .products-container .product img{
+    height: 10rem;
+    width: 10rem;
+ }
+
+ .container .products-container .product:hover img{
+    transform: scale(.9);
+ }
+ .container .products-container .product h6{
+    padding:.2rem 0;
+    color:#444;
+ }
+ .container .products-container .product:hover h6{
+    color:#47afe3;
+ }
+  
+ .products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ /*------------------------caja de texto------------------------------*/
+ .input1[type="text"] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  
+  .input1[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon .input1[type="text"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon {
+    position: relative;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 20px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon .input1[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg .input1[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+/*------------------------Fin caja de texto------------------------------*/
+
+/*------------------------caja de texto2------------------------------*/
+.input2[type="text"] {
+    width: 97%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-top: 50px;
+  }
+  
+  .input2[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon-2 .input2[type="text"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon-2 {
+    position: relative;
+  }
+  
+  .inputWithIcon-2 i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 55px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon-2 .input2[type="text"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon-2.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon-2.inputIconBg .input2[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+/*------------------------Fin caja de texto2------------------------------*/
+
+/*------------------------caja de texto------------------------------*/
+.input3[type="password"] {
+    width: 97%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-top: 50px;
+  }
+  
+  .input3[type="password"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon-3 .input3[type="password"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon-3 {
+    position: relative;
+  }
+  
+  .inputWithIcon-3 i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 55px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon-3 .input3[type="password"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon-3.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon-3.inputIconBg .input3[type="password"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+/*------------------------Fin caja de texto3------------------------------*/
+
+/*------------------------caja de texto4------------------------------*/
+.input4[type="email"] {
+    width: 97%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-top: 50px;
+  }
+  
+  .input4[type="email"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon-4 .input4[type="email"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon-4 {
+    position: relative;
+  }
+  
+  .inputWithIcon-4 i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 55px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon-4 .input4[type="email"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon-4.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon-4.inputIconBg .input4[type="email"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+/*------------------------Fin caja de texto4------------------------------*/
+
+/*------------------------caja de texto4------------------------------*/
+.input5[type="number"] {
+    width: 97%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-top: 8px;
+  }
+  
+  .input5[type="number"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon-5 .input5[type="number"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon-5 {
+    position: relative;
+  }
+  
+  .inputWithIcon-5 i {
+    position: absolute;
+    left: 0;
+    top: -34px;
+    padding: 55px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon-5 .input5[type="number"]:focus + i {
+    color: dodgerBlue;
+  }
+  
+  .inputWithIcon-5.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon-5.inputIconBg .input5[type="number"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
+/*------------------------Fin caja de texto4------------------------------*/
+
+
+.container-paises{
+  width: 97%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  margin-top: 25px;
+}
+.container-paises:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon-6 .container-paises {
+  padding-left: 40px;
+}
+
+.inputWithIcon-6 {
+  position: relative;
+}
+
+.inputWithIcon-6 i {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  padding: 55px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon-6 .container-paises:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon-6.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon-6.inputIconBg .container-paises:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Estilo parrafo principal */
+  #pa{
+    font-size: 11px;
+    color: rgb(185, 184, 184);
+  }
+  .textoss{
+    margin-top: -5px;
+  }
+    /*Estilo button */
+    .button1 {
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+    }
+    .button1{
+        height: 40px;
+        width: 80px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        color: #ffffff;
+        background-color: black;
+        border-radius: 3px;
+        margin-left: 94%;
+        margin-bottom: 20px;
+        border-style: none;
+       
+   
+      }
+      .button1:hover {
+        background-color: dodgerBlue; /* blue */
+        color: white;
+    }
+
+
+
+
+
+.parrafo{
+  margin-top: -24px;
+   
+}
+
+    #tex{
+        font-size: 16px;
+        color: rgb(131, 131, 131)
+    }
+    hr {
+        width: 97%;
+        height:1px;
+        border-width:0;
+        color:rgba(128, 128, 128, 0.323);
+        background-color:rgba(128, 128, 128, 0.323)
+        
+    }
+
+    .textss{
+      margin-top: 20px;
+    }
+
+
+
+/*Para el el final */
+.parrafo-1{
+  padding: 5px;
+  display: block;
+  margin-bottom: -5.5px;
+  
+}
+
+.lineas{
+  display: flex;
+  justify-content: end;
+  height:1px;
+
+}
+
+
+#tex-1{
+  font-size: 16px;
+  color: rgb(131, 131, 131)
+}
+
+.dires{
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  margin: 0 auto;
+}
+.grid-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  margin: 0 auto;
+}
